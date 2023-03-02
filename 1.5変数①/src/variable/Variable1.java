@@ -16,11 +16,14 @@ public class Variable1 {
 //		年齢は19歳です。
 //		身長は174.2㎝です。
 //		よろしくお願いします。
+
 		String name = "山田太郎";
-		String jender = "男";
+//		charはシングルコーテーションしか使えない
+		char a = '男';    
+		char b = '女';
         int age = 19;
         double height = 174.2;
-        System.out.println("私の自己紹介をします\n" + "名前は" + name + "です。\n" + "性別は" + jender + "です。\n" + 
+        System.out.println("私の自己紹介をします\n" + "名前は" + name + "です。\n" + "性別は" + a + "です。\n" + 
                             "年齢は" + age + "歳です。\n" + "身長は" + height + "cmです。\n" + "よろしくお願いします。");
         
 	}
