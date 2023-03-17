@@ -53,9 +53,9 @@ public class Obj1 {
 
 
 	public String animal(String name) {
-//コンソールに表示させる処理
+//コンソールに表示させる処理 　　今回ならstrがライオン:2.1:80,ゾウ:3.2:40,パンダ:1.9:30,チンパンジー:0.94:25,シマウマ:2.4:65,インコ:0.1:50
 		       String str = scan.nextLine();	 
-//splitでコンソールにいれた文字列を   ,   ごとに区切る		        
+//splitでコンソールにいれた文字列を   ,   ごとに区切る	区切ったものをString型の配列colorsにいれる	        
 		        String[] colors = str.split(",");
 //コンソールに出す処理を終わらせる		      
 		        scan.close();
@@ -65,8 +65,8 @@ public class Obj1 {
 //文字列をさらに、　：　ごとに区切る		        	
 		        	String[]animal = aaa.split(":");
 		            System.out.println("動物名：" + animal[0]);
-		            System.out.println("体長：" + animal[1]);
-		            System.out.println("速度：" + animal[2]);
+		            System.out.println("体長：" + animal[1] + "m");
+		            System.out.println("速度：" + animal[2] + "km/h");
 /*ライオン:2.1:80,ゾウ:3.2:40,パンダ:1.9:30,チンパンジー:0.94:25,シマウマ:2.4:65,インコ:0.1:50の中に
 “学名”がないから、学名を表示させるためにif文で各動物ごとに処理をさせる
  */	
