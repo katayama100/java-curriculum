@@ -3,20 +3,20 @@ package pack;
 //クラスを継承する、今回ならShoriがサブクラスで、ShoriBeanがスーパークラス
 public class Shori extends ShoriBean{
 
-	//オーバーライドで、getNameを書き換える		
-	public String getName() {
+	//オーバーライドで、getNameを書き換える
+	public String getName(){
 		System.out.println("お名前を入力してください");
-		name = scan.nextLine();	 
+		name = scan.nextLine();
 		System.out.println("こんにちは「" + name + "」さん");
 		System.out.println("ステータス");
-		scan.close();        
+		scan.close();
 		return name;
 	}
 	//新しく作る
 	public void zzz() {
-		//for文で全ての要素を一回ずつプリントする		
+		//for文で全ての要素を一回ずつプリントする
 		for (int i = 0; i < 5; i++) {
-			//1000までのランダムな数字を入れるプログラムを作る			
+			//1000までのランダムな数字を入れるプログラムを作る
 			int bbb = rnd.nextInt(1000);
 			//switch文でHP,MP,攻撃力,素早さ,防御力の５つそれぞれにi=0,1,2,3,4を割り振る
 			switch(i) {
@@ -60,8 +60,3 @@ public class Shori extends ShoriBean{
 		System.out.println("さあ冒険に出かけよう！");
 	}
 }
-
-
-
-
-
